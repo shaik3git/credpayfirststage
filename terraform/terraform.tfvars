@@ -23,7 +23,7 @@ postgres_subnet_prefix = "10.0.16.0/24"
 node_count     = 2
 node_min_count = 2
 node_max_count = 2
-vm_size        = "Standard_B2s"
+vm_size        = "Standard_D2s_v5"
 
 # ----- PostgreSQL -----
 postgres_version        = "16"
@@ -34,5 +34,5 @@ database_name           = "credpay"
 log_retention_days = 30
 
 # ----- Key Vault (created out-of-band, in the CredProj bootstrap RG - see backend.tf) -----
-key_vault_name                = "credappKV"
+key_vault_name                = "credappKV1"
 key_vault_resource_group_name = "CredApp"
